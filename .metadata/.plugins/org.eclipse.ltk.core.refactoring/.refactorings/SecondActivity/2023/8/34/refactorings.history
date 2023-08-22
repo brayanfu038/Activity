@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;View.java&apos; to &apos;FirstPoint/src/view&apos;&#x0D;&#x0A;- Original project: &apos;SecondActivity&apos;&#x0D;&#x0A;- Destination element: &apos;FirstPoint/src/view&apos;&#x0D;&#x0A;- Original element: &apos;view.View.java&apos;" description="Copy compilation unit" destination="=FirstPoint/src&lt;view" element1="/src&lt;view{View.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1692524355972" units="1" version="1.0"/>
+</session>

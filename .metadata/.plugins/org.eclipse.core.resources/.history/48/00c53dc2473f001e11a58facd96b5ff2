@@ -1,0 +1,14 @@
+package presenter;
+
+import model.ShoppingCart;
+
+public class Presenter {
+	ShoppingCart cart;
+	public Presenter() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void Run() {
+		
+	}
+}

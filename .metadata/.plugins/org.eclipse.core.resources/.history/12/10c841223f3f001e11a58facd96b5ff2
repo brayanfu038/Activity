@@ -1,0 +1,15 @@
+package presenter;
+
+import model.TaskManagement;
+
+public class Presenter {
+	TaskManagement system;
+	public Presenter() {
+		// TODO Auto-generated constructor stub
+		system = new TaskManagement();
+	}
+	
+	public void Run() {
+		
+	}
+}

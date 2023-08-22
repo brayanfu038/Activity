@@ -1,0 +1,15 @@
+package presenter;
+
+import model.MedicalCenter;
+import view.View;
+
+public class Presenter {
+	
+	MedicalCenter center;
+	View view;
+	public Presenter() {
+		center = new MedicalCenter();
+		view = new View();
+	}
+	
+}

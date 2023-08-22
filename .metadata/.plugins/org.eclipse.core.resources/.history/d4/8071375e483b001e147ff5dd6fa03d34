@@ -1,0 +1,43 @@
+package model;
+
+public class Task {
+	
+	private int id;
+	private String description;
+	private double executionTime;
+	private int priority;
+	
+	public Task(int id, String description, double executionTime,int priority) {
+		super();
+		this.id = id;
+		this.description = description;
+		this.executionTime = executionTime;
+		this.priority = priority;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public double getExecutionTime() {
+		return executionTime;
+	}
+	public void setExecutionTime(double executionTime) {
+		this.executionTime = executionTime;
+	}
+	public int getPriority() {
+		return priority;
+	}
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
+	
+}

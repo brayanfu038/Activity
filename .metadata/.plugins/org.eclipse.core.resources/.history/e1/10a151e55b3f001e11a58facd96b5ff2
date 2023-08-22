@@ -1,0 +1,12 @@
+package model;
+
+import java.util.PriorityQueue;
+
+public class MedicalCenter {
+	
+	PriorityQueue<Patient>patients;
+	
+	public MedicalCenter() {
+		patients = new PriorityQueue<Patient>();
+	}
+}

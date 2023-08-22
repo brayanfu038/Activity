@@ -1,0 +1,20 @@
+package model;
+
+import java.util.Vector;
+
+public class ShoppingCart {
+	Vector<Item>items;
+	
+	public ShoppingCart() {
+		items = new Vector<Item>(10,1);
+	}
+	
+	public void addItem() {
+	
+	}
+	
+	public Item createItem(String name,double price) {
+		Item item = new Item(name,price);
+			return item;
+	}
+}

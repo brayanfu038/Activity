@@ -1,0 +1,13 @@
+package presenter;
+
+import model.MedicalCenter;
+
+public class Presenter {
+	
+	MedicalCenter center;
+
+	public Presenter() {
+		center = MedicalCenter();
+	}
+	
+}

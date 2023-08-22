@@ -1,0 +1,20 @@
+package model;
+
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class SubSet {
+	public static void main(String[] args) {
+		
+		
+		Scanner console = new Scanner(System.in);
+		String conjunto = "{1,2,3}";
+		
+		String subcadena = conjunto.substring(1, 6);
+		String [] cadena1 = subcadena.split(",");
+		HashSet <String> Conjunto  = new HashSet<String>();
+		
+		
+	}
+	
+}

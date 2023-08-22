@@ -1,0 +1,26 @@
+package model;
+
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+public class MedicalCenter {
+	
+	PriorityQueue<Patient>patients;
+	Comparator<Patient>comparator; 
+
+	public MedicalCenter() {
+		comparator = new Comparator<Patient>(){
+
+			@Override
+			public int compare(Patient object1, Patient object2) {
+				if(object1.getPriority() != object2.getPriority()) {
+				
+					return Integer.compare(object1.getPriority(),object2.getPriority());
+				}
+				return Integer.compare(object1.getExecutionTime(),object2.getExecutionTime());
+			}
+           
+        };
+		patients = new PriorityQueue<Patient>();
+	}
+}

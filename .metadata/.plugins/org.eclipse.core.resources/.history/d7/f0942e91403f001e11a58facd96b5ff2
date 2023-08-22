@@ -1,0 +1,42 @@
+package presenter;
+
+import java.time.LocalDate;
+
+import model.TaskManagement;
+import view.View;
+
+public class Presenter {
+	TaskManagement system;
+	View view;
+	public Presenter() {
+		// TODO Auto-generated constructor stub
+		system = new TaskManagement();
+		view = new View();
+	}
+	
+	public void Run() {
+		
+		int option;
+		do {
+			switch (option = view.readIntGrapichMessage(view.firstMenu())) {
+			case 1:
+				system.createUser(view.readStringGrapichMessage("Ingrese el nombre"),view.readIntGrapichMessage("Ingrese el id"));
+				break;
+			case 2:
+				system.createTask(view.readStringGrapichMessage("Ingrese la descripcion: "),LocalDate.of(view.readIntGrapichMessage("Año: "),
+						LocalDate.of(view.readIntGrapichMessage("Mes: "), LocalDate.of(view.readIntGrapichMessage("Dia: ")));
+				
+				break;
+			case 3: 
+				break;
+
+			default:
+				break;
+			}
+		} while (option !=4);
+		
+		
+	}
+	
+	
+}

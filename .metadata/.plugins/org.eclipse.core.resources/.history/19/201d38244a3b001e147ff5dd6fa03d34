@@ -1,0 +1,26 @@
+package model;
+
+import java.util.PriorityQueue;
+
+public class PlanningSystem {
+	
+	PriorityQueue<Task> tasks;
+	
+	public PlanningSystem() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	//Este metodo me agrega una tarea a la cola
+	public void addTask() {
+		
+	}
+	
+	//Este metodo crea una tarea
+	public Task createTask(int id,String description,double time,int priority) {
+		
+		Task  task = new Task(id,description,time,priority);
+		
+		return task;
+	}
+}

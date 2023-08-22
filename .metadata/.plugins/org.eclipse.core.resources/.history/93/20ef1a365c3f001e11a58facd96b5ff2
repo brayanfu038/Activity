@@ -1,0 +1,30 @@
+package model;
+
+public class Patient {
+	
+	String name;
+	Integer priority;
+	
+	public Patient(String name,Integer priority) {
+		// TODO Auto-generated constructor stub
+		this.name = name;
+		this.priority = priority;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getPriority() {
+		return priority;
+	}
+
+	public void setPriority(Integer priority) {
+		this.priority = priority;
+	}
+	
+}

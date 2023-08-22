@@ -1,0 +1,38 @@
+package presenter;
+
+import model.TaskManagement;
+import view.View;
+
+public class Presenter {
+	TaskManagement system;
+	View view;
+	public Presenter() {
+		// TODO Auto-generated constructor stub
+		system = new TaskManagement();
+		view = new View();
+	}
+	
+	public void Run() {
+		
+		int option;
+		do {
+			switch (option = view.readIntshowGrapichMessage(view.firstMenu())) {
+			case 1:
+				system.createUser(, option);
+				break;
+			case 2:
+				
+				break;
+			case 3: 
+				break;
+
+			default:
+				break;
+			}
+		} while (option !=4);
+		
+		
+	}
+	
+	
+}

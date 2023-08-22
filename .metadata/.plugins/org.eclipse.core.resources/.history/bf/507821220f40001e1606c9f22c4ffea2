@@ -1,0 +1,38 @@
+package model;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class SubSet {
+	public static void main(String[] args) {
+		
+		
+		Scanner console = new Scanner(System.in);
+		String conjunto = "{1,2,3}";
+		
+		String subcadena = conjunto.substring(1, 6);
+		String [] cadena1 = subcadena.split(",");
+		HashSet <String> conjunto1  = new HashSet<String>();
+		
+		for (int i = 0; i < cadena1.length; i++) {
+			conjunto1.add(cadena1[i]);
+		}
+		String imprimir="{}";
+		
+		Iterator<String> i = conjunto1.iterator();
+		String value1="";
+		String value2="";
+
+		while (i.hasNext()) {
+			Iterator<String>  j = conjunto1.iterator();
+			while (j.hasNext()) {
+				value1 = i.next();
+				value2 = j.next();
+				System.out.println(value1+" " + value2);
+
+				} 
+			}
+		}
+	
+}

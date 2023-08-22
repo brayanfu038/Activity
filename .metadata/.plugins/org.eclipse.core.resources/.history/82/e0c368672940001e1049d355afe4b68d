@@ -1,0 +1,39 @@
+package model;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class SubSet {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        String conjunto = "{1,2,3}";
+
+        // Extracción de los elementos individuales del conjunto
+        String subcadena = conjunto.substring(1, conjunto.length() - 1);
+        String[] cadena1 = subcadena.split(",");
+        HashSet<String> input = new HashSet<String>();
+
+        // pasamos a enteros los numeros y los agregamos al conjunto S
+        for (int i = 0; i < cadena1.length; i++) {
+            input.add(cadena1[i]);
+        }
+        
+        HashSet<String>subConjunt = new HashSet<String>();
+        subConjunt.add("");
+        Iterator<String>i = input.iterator();
+    	System.out.println(subConjunt.size());
+
+        String auxNumber = "";
+        while (i.hasNext()) {
+        	auxNumber = i.next();
+        	Iterator<String> j = subConjunt.iterator();
+        	while (j.hasNext()) {
+        		System.out.println("entra");
+        		subConjunt.add(auxNumber);
+			}
+		}
+
+        System.out.println(subConjunt);
+    }
+}
